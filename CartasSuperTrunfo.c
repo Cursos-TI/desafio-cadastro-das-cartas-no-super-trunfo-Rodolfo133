@@ -1,22 +1,53 @@
 #include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    //inicia as variaveis
+    int populacao1, pontos1, populacao2, pontos2;
+    char nome1[50], nome2[50];
+    float area1, PIB1, area2, PIB2;
+
+    //cadastra as variaveis
+    printf("Digite o nome do primeiro estado: \n");
+    scanf("%s", &nome1);
+
+    printf("digite a populacao do primeiro estado: \n");
+    scanf("%d", &populacao1);
+
+    printf("digite quantos pontos turisticos o primeiro estado possui: \n");
+    scanf("%d", &pontos1);
+
+    printf("digite a area do primeiro estado: \n");
+    scanf("%f", &area1);
+
+    printf("digite o PIB do primeiro estado: \n");
+    scanf("%f", &PIB1);
+
+    printf("Digite o nome do segundo estado: \n");
+    scanf("%s", &nome2);
+
+    printf("digite a populacao do segundo estado: \n");
+    scanf("%d", &populacao2);
+
+    printf("digite quantos pontos turisticos o segundo estado possui: \n");
+    scanf("%d", &pontos2);
+
+    printf("digite a area do segundo estado: \n");
+    scanf("%f", &area2);
+
+    printf("digite o PIB do segundo estado: \n");
+    scanf("%f", &PIB2);
+
+    //exibicao da carta
+    printf("Estado: %s \n", nome1);
+    printf("Populacao: %d \n", populacao1);
+    printf("numero de pontos turisticos: %d \n", pontos1);
+    printf("area: %f \n", area1) ;
+    printf("PIB: %f \n", PIB1);
+
+    printf("Estado: %s \n", nome2);
+    printf("Populacao: %d \n", populacao2);
+    printf("numero de pontos turisticos: %d \n", pontos2);
+    printf("area: %f \n", area2) ;
+    printf("PIB: %f \n", PIB2);
 
     return 0;
 }
